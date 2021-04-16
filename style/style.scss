@@ -161,9 +161,6 @@ body {
     margin-top: 20px;
     width: 100%;
     text-align: center;
-    span{
-      color: #fff !important;
-    }
   }
 
   .main-menu {
@@ -424,7 +421,6 @@ figure.snip1321.hover:after {
 
     .form {
       fieldset {
-        text-align: right;
         .form-control {
           background-color: var(--background);
           border: none;
@@ -435,22 +431,22 @@ figure.snip1321.hover:after {
           font-weight: bold;
           font-size: 1.2rem;
         }
-        a {
-          text-decoration: none;
-          padding: 20px 30px;
-          font-size: 1rem;
-          font-weight: bold;
-          background-color: var(--pink);
-          box-shadow: 0 0 5px var(--pink);
-          color: #fff;
-          border: none;
-          cursor: pointer;
-          transition: 0.3s;
-          border-radius: 5px;
-          &:hover {
-            box-shadow: 0 0 15px var(--pink);
-          }
-        }
+      }
+    }
+    a {
+      text-decoration: none;
+      padding: 20px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: var(--pink);
+      box-shadow: 0 0 5px var(--pink);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 5px;
+      &:hover {
+        box-shadow: 0 0 15px var(--pink);
       }
     }
   }
@@ -588,4 +584,14 @@ figure.snip1321.hover:after {
     display: flex;
     flex-direction: column;
   }
+}
+@media screen and (max-width: 450px) {
+    figcaption{
+      span{
+        font-size: .8rem;
+      }
+      h4{
+        font-size: .8rem;
+      }
+    }
 }

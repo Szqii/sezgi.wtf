@@ -218,10 +218,6 @@ body {
   text-align: center;
 }
 
-.menu .copyright-text span {
-  color: #fff !important;
-}
-
 .menu .main-menu {
   text-align: center;
   padding: 0;
@@ -501,10 +497,6 @@ figure.snip1321.hover:after {
           flex-direction: column;
 }
 
-.contact-page .container .form fieldset {
-  text-align: right;
-}
-
 .contact-page .container .form fieldset .form-control {
   background-color: var(--background);
   border: none;
@@ -517,7 +509,7 @@ figure.snip1321.hover:after {
   font-size: 1.2rem;
 }
 
-.contact-page .container .form fieldset a {
+.contact-page .container a {
   text-decoration: none;
   padding: 20px 30px;
   font-size: 1rem;
@@ -533,7 +525,7 @@ figure.snip1321.hover:after {
   border-radius: 5px;
 }
 
-.contact-page .container .form fieldset a:hover {
+.contact-page .container a:hover {
   -webkit-box-shadow: 0 0 15px var(--pink);
           box-shadow: 0 0 15px var(--pink);
 }
@@ -663,6 +655,15 @@ figure.snip1321.hover:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  figcaption span {
+    font-size: .8rem;
+  }
+  figcaption h4 {
+    font-size: .8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

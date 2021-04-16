@@ -40,12 +40,12 @@
       <div id="page-wraper">
         <!-- Sidebar Menu -->
         <div class="open-menu">
-          <i id="openIcon" class="fas fa-bars fa-3x" style="color: white"></i>
+          <i id="openIcon" class="fas fa-bars fa-2x" style="color: white"></i>
         </div>
         <div id="menu" class="menu">
           <div class="container">
             <div class="close-menu">
-              <i id="closeIcon" class="fas fa-times fa-3x"></i>
+              <i id="closeIcon" class="fas fa-times fa-2x"></i>
             </div>
             <div class="image">
               <a href="#"><img src="./img/website/pp.jpeg" alt="" /></a>
@@ -57,15 +57,17 @@
               >
             </div>
             <div class="copyright-text">
+              <span style="color: white;">|| </span>
               <!-- Typer.js -->
               <span
                 class="typer"
                 id="main"
-                data-words="Here's my socials, Don't forget to contact me!, Keep in touch! (⌐■_■)"
+                data-words="Check out my skills ¯\_(ツ)_/¯,Try projects' demos out, Keep in touch! (⌐■_■)"
                 data-delay="100"
                 data-deleteDelay="1000"
+                data-colors="white"
               ></span>
-              <span class="cursor" data-owner="main"></span>
+              <span class="cursor" data-owner="main" data-cursor-display="||"></span>
               <script
                 async
                 src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"
@@ -74,7 +76,7 @@
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-                <li class="first navs"><a href="#section1">Hey!</a></li>
+                <li class="first navs"><a href="#section1">Hello there!</a></li>
                 <li class="navs"><a href="#section2">Skills</a></li>
                 <li class="navs"><a href="#section3">Projects</a></li>
                 <li class="navs contact-me-nav">
@@ -151,10 +153,9 @@
               <h2>Skills</h2>
               <div class="line-dec"></div>
               <span
-                >Curabitur leo felis, rutrum vitae varius eu, malesuada a
-                tortor. Vestibulum congue leo et tellus aliquam, eu viverra
-                nulla semper. Nullam eu faucibus diam. Donec eget massa
-                ante.</span
+                >I am still developing myself only in frontend development, but
+                I will continue to improve my skills in many different areas as
+                soon as possible.</span
               >
             </div>
             <div class="row">
@@ -273,10 +274,9 @@
               <h2>My Projects</h2>
               <div class="line-dec"></div>
               <span
-                >Aenean sollicitudin ex mauris, lobortis lobortis diam euismod
-                sit amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
-                mauris.</span
-              >
+                >Here is my projects below. You can see their descriptions,
+                demos and source codes by clicking on them.
+              </span>
             </div>
             <div class="row">
               <div class="isotope-wrapper">
@@ -480,8 +480,7 @@
                           ></textarea>
                         </fieldset>
                       </div>
-                      <div class="col-md-12">
-                        <fieldset>
+                      <div class="col-md-12 mt-3 d-flex justify-content-end">
                           <a
                             id="form-submit"
                             class="link"
@@ -489,7 +488,6 @@
                           >
                             Let's talk
                           </a>
-                        </fieldset>
                       </div>
                     </div>
                   </form>
@@ -521,7 +519,6 @@
         document.getElementsByClassName(
           "link"
         ).href = `mailto:szqii.altn@gmail.com?subject=${subjectInput.value}&body=${messageInput.value}`;
-        console.log(document.getElementsByClassName("link").href);
       };
     </script>
   </body>
