@@ -21,7 +21,6 @@
 
     <title>Sezgi Altan</title>
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="./style/progress.css" />
     <link rel="stylesheet" href="./style/scrollbar.css" />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
@@ -57,7 +56,7 @@
               >
             </div>
             <div class="copyright-text">
-              <span style="color: white;">|| </span>
+              <span style="color: white">|| </span>
               <!-- Typer.js -->
               <span
                 class="typer"
@@ -67,7 +66,11 @@
                 data-deleteDelay="1000"
                 data-colors="white"
               ></span>
-              <span class="cursor" data-owner="main" data-cursor-display="||"></span>
+              <span
+                class="cursor"
+                data-owner="main"
+                data-cursor-display="||"
+              ></span>
               <script
                 async
                 src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"
@@ -156,111 +159,35 @@
                 soon as possible.</span
               >
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="service-item">
-                  <i class="fab fa-html5 fa-3x"></i>
-                  <h4><span class="makeItPink">HTML</span></h4>
-                  <div class="progress_bar">
-                    <div class="pro-bar">
-                      <span class="progress_number">4/5</span>
-                      <span
-                        class="progress-bar-inner"
-                        style="width: 80%"
-                        data-value="80"
-                        data-percentage-value="80"
-                      ></span>
-                    </div>
-                  </div>
-                </div>
+            <div class="row service-item-container">
+              <div class="service-item">
+                <i class="fab fa-html5 fa-3x"></i>
+                <!-- <h4><span class="makeItPink">HTML</span></h4> -->
               </div>
-              <div class="col-md-6">
-                <div class="service-item">
-                  <i class="fab fa-css3-alt fa-3x"></i>
-                  <i class="fab fa-sass fa-3x"></i>
-                  <h4><span class="makeItPink">CSS & SASS</span></h4>
-                  <div class="progress_bar">
-                    <div class="pro-bar">
-                      <span class="progress_number">4/5</span>
-                      <span
-                        class="progress-bar-inner"
-                        style="width: 80%"
-                        data-value="80"
-                        data-percentage-value="80"
-                      ></span>
-                    </div>
-                  </div>
-                </div>
+
+              <div class="service-item">
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <!-- <h4><span class="makeItPink">CSS</span></h4> -->
               </div>
-              <div class="col-md-6">
-                <div class="service-item">
-                  <i class="fab fa-js-square fa-3x"></i>
-                  <h4><span class="makeItPink">JavaScript</span></h4>
-                  <div class="progress_bar">
-                    <div class="pro-bar">
-                      <span class="progress_number">3/5</span>
-                      <span
-                        class="progress-bar-inner"
-                        style="width: 60%"
-                        data-value="60"
-                        data-percentage-value="60"
-                      ></span>
-                    </div>
-                  </div>
-                </div>
+
+              <div class="service-item">
+                <i class="fab fa-sass fa-3x"></i>
+                <!-- <h4><span class="makeItPink">SASS</span></h4> -->
               </div>
-              <div class="col-md-6">
-                <div class="service-item">
-                  <div class="third-service-icon service-icon"></div>
-                  <i class="fab fa-vuejs fa-3x"></i>
-                  <h4><span class="makeItPink">Vue.js</span></h4>
-                  <div class="progress_bar">
-                    <div class="pro-bar">
-                      <span class="progress_number">4/5</span>
-                      <span
-                        class="progress-bar-inner"
-                        style="width: 80%"
-                        data-value="80"
-                        data-percentage-value="80"
-                      ></span>
-                    </div>
-                  </div>
-                </div>
+
+              <div class="service-item">
+                <i class="fab fa-js-square fa-3x"></i>
+                <!-- <h4><span class="makeItPink">JavaScript</span></h4> -->
               </div>
-              <div class="col-md-6">
-                <div class="service-item">
-                  <i class="fab fa-react fa-3x"></i>
-                  <h4><span class="makeItPink">React.js</span></h4>
-                  <div class="progress_bar">
-                    <div class="pro-bar">
-                      <span class="progress_number">1/5</span>
-                      <span
-                        class="progress-bar-inner"
-                        style="width: 20%"
-                        data-value="20"
-                        data-percentage-value="20"
-                      ></span>
-                    </div>
-                  </div>
-                </div>
+
+              <div class="service-item">
+                <i class="fab fa-vuejs fa-3x"></i>
+                <!-- <h4><span class="makeItPink">Vue.js</span></h4> -->
               </div>
-              <div class="col-md-6">
-                <div class="service-item">
-                  <!-- <i class="fab fa-react fa-3x"></i> -->
-                  <img src="./img/website/nuxtjs-icon.svg" alt="" />
-                  <h4><span class="makeItPink">Nuxt.js</span></h4>
-                  <div class="progress_bar">
-                    <div class="pro-bar">
-                      <span class="progress_number"><1/5</span>
-                      <span
-                        class="progress-bar-inner"
-                        style="width: 10%"
-                        data-value="10"
-                        data-percentage-value="10"
-                      ></span>
-                    </div>
-                  </div>
-                </div>
+
+              <div class="service-item">
+                <i class="fab fa-react fa-3x"></i>
+                <!-- <h4><span class="makeItPink">React.js</span></h4> -->
               </div>
             </div>
           </div>
@@ -412,9 +339,7 @@
                     ></a>
                   </li>
                   <li>
-                    <a
-                      href="mailto:szqii.altn@gmail.com"
-                      target="_blank"
+                    <a href="mailto:szqii.altn@gmail.com" target="_blank"
                       ><i class="fa fa-envelope fa-3x"></i
                     ></a>
                   </li>
@@ -486,13 +411,13 @@
                         </fieldset>
                       </div>
                       <div class="col-md-12 mt-3 d-flex justify-content-end">
-                          <a
-                            id="form-submit"
-                            class="link"
-                            href="mailto:szqii.altn@gmail.com"
-                          >
-                            Let's talk
-                          </a>
+                        <a
+                          id="form-submit"
+                          class="link"
+                          href="mailto:szqii.altn@gmail.com"
+                        >
+                          Let's talk
+                        </a>
                       </div>
                     </div>
                   </form>

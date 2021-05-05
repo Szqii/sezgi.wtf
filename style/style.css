@@ -3,6 +3,12 @@
   --background: rgba(21, 32, 43, 1);
   --pink: rgba(224, 36, 94, 0.7);
   --pinkWoAlpha: rgb(224, 36, 94);
+  --html5: #E44D26;
+  --css: #2162AC;
+  --sass: #CC6699;
+  --js: #F0DA50;
+  --react: #4AD5FF;
+  --vue: #00C180;
 }
 
 * {
@@ -368,7 +374,51 @@ body {
 }
 
 .service-item {
-  padding: 20px;
+  padding: 50px;
+}
+
+.service-item i {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.service-item i:hover.fa-html5 {
+  color: var(--html5);
+}
+
+.service-item i:hover.fa-css3-alt {
+  color: var(--css);
+}
+
+.service-item i:hover.fa-sass {
+  color: var(--sass);
+}
+
+.service-item i:hover.fa-js-square {
+  color: var(--js);
+}
+
+.service-item i:hover.fa-vuejs {
+  color: var(--vue);
+}
+
+.service-item i:hover.fa-react {
+  color: var(--react);
+}
+
+.service-item-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 figure.snip1321 {
@@ -660,10 +710,10 @@ figure.snip1321.hover:after {
 
 @media screen and (max-width: 450px) {
   figcaption span {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   figcaption h4 {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,13 @@ $path-length: 157px;
   --background: rgba(21, 32, 43, 1);
   --pink: rgba(224, 36, 94, 0.7);
   --pinkWoAlpha: rgb(224, 36, 94);
+
+  --html5: #E44D26;
+  --css: #2162AC;
+  --sass: #CC6699;
+  --js: #F0DA50;
+  --react: #4AD5FF;
+  --vue: #00C180;
 }
 
 * {
@@ -305,9 +312,39 @@ body {
 }
 
 .service-item {
-  padding: 20px;
-}
+  padding: 50px;
 
+  i{
+    transform: scale(1.8);
+    transition: all .3s ease-in-out;
+    &:hover{
+      &.fa-html5{
+        color: var(--html5);
+      }
+      &.fa-css3-alt{
+        color: var(--css);
+      }
+      &.fa-sass{
+        color: var(--sass);
+      }
+      &.fa-js-square{
+        color: var(--js);
+      }
+      &.fa-vuejs{
+        color: var(--vue);
+      }
+      &.fa-react{
+        color: var(--react);
+      }
+    }
+  }
+}
+.service-item-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 // Projects
 
@@ -460,12 +497,11 @@ figure.snip1321.hover:after {
 /* MEDIA QUERIES  */
 @media screen and (min-width: 1681px) {
   .menu {
-    .container{
+    .container {
       margin-top: 50px;
     }
   }
 }
-
 
 @media screen and (max-width: 1680px) {
   .menu {
@@ -586,12 +622,12 @@ figure.snip1321.hover:after {
   }
 }
 @media screen and (max-width: 450px) {
-    figcaption{
-      span{
-        font-size: .8rem;
-      }
-      h4{
-        font-size: .8rem;
-      }
+  figcaption {
+    span {
+      font-size: 0.8rem;
     }
+    h4 {
+      font-size: 0.8rem;
+    }
+  }
 }
