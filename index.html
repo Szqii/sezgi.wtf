@@ -1,455 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
-
-    <title>Sezgi Altan</title>
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="./style/scrollbar.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi, I'm Sezgi</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/splide.min.css" />
+    <link rel="stylesheet" href="./style/splide-default.min.css" />
   </head>
-
   <body>
-    <!-- Progresss -->
-
-    <div class="loading-wrapper">
-      <div class="loader">
-        <div class="loader-outter"></div>
-        <div class="loader-inner"></div>
+    <header>
+      <div class="header-container">
+        <div
+          class="navigation-btn home-section-btn"
+          onclick="jumpTo('home-section')"
+        >
+          HOME
+        </div>
+        <div
+          class="navigation-btn about-section-btn"
+          onclick="jumpTo('about-section')"
+        >
+          ABOUT
+        </div>
+        <div
+          class="navigation-btn project-section-btn"
+          onclick="jumpTo('project-section')"
+        >
+          PROJECTS
+        </div>
       </div>
-    </div>
+    </header>
+    <main class="scroll-container">
+      <section class="home-section" id="home-section">
+        <div class="home-container">
+          <div class="home-text">
+            <h1>Sezgi Altan</h1>
+            <span
+              class="typer"
+              id="typer"
+              data-words=" 	.inquisitive, .enthusiastic , .web developer"
+              data-colors="#e1306c,#6d67c6,#b74033"
+              data-delay="50"
+              data-loop="1"
+            >
+            </span>
 
-    <div class="page">
-      <div id="page-wraper">
-        <!-- Sidebar Menu -->
-        <div class="open-menu">
-          <i id="openIcon" class="fas fa-bars fa-2x" style="color: white"></i>
-        </div>
-        <div id="menu" class="menu">
-          <div class="container">
-            <div class="close-menu">
-              <i id="closeIcon" class="fas fa-times fa-2x"></i>
-            </div>
-            <div class="image">
-              <a href="#"><img src="./img/website/pp.jpeg" alt="" /></a>
-            </div>
-            <div class="author-content">
-              <h4>Sezgi Altan</h4>
-              <span class="desc"
-                >CE. Student <span class="column">|</span> Frontend Dev.</span
-              >
-            </div>
-            <div class="copyright-text">
-              <span style="color: white">|| </span>
-              <!-- Typer.js -->
-              <span
-                class="typer"
-                id="main"
-                data-words="Check out my skills ¯\_(ツ)_/¯,Try projects' demos out, Keep in touch! (⌐■_■)"
-                data-delay="100"
-                data-deleteDelay="1000"
-                data-colors="white"
-              ></span>
-              <span
-                class="cursor"
-                data-owner="main"
-                data-cursor-display="||"
-              ></span>
-              <script
-                async
-                src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"
-              ></script>
-              <!--  -->
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li class="first navs"><a href="#section1">Hello there!</a></li>
-                <li class="navs"><a href="#section2">Skills</a></li>
-                <li class="navs"><a href="#section3">Projects</a></li>
-                <li class="navs contact-me-nav">
-                  <a href="#section4">Keep in touch!</a>
-                </li>
-              </ul>
-            </nav>
+            <script
+              async
+              src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"
+            ></script>
           </div>
         </div>
+      </section>
 
-        <section class="section about-me" data-section="section1">
-          <div class="container">
-            <div class="section-heading">
-              <h2>About Me</h2>
-              <div class="line-dec"></div>
-              <span>
-                <br />
-                Hi, I'm Sezgi Altan,
-                <span class="makeItPink">frontend developer.</span> <br />
-                While I am dealing with the school I am a student of, I also try
-                to reach one of my most important goal which is being very
-                comprehensive developer but as starting, I am trying to learn
-                frontend technologies.</span
-              >
-            </div>
-            <div class="right-image-post">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="left-text">
-                    <h4>Interests</h4>
-                    <p>
-                      I can also describe myself as an
-                      <span class="makeItPink">amateur photographer.</span>
-                      There is a plan about making a blog to share my
-                      photographs but let it be just a plan for now.
-                      <br />
-                      Besides that, I have different interests such as
-                      <span class="makeItPink">
-                        playing online games, travelling
-                      </span>
-                      and <span class="makeItPink"> watching sitcoms. </span>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="right-image">
-                    <img
-                      src="./img/website/right-img.jpeg"
-                      alt=""
-                      style="width: 300px; height: 300px; border-radius: 10px"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="btn">
-                <form
-                  method="get"
-                  action="./img/website/Sezgi_ALTAN_Resume.pdf"
-                >
-                  <button class="download" type="submit">
-                    Click here to download my resume
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
+      <section class="about-section" id="about-section">
+        <div class="about-container">
+          <p class="about-text">
+            Hi, I'm <span style="color: #6d67c6"> Sezgi Altan! </span> <br />
+            Web developer working on
+            <span style="color: #ffffff">frontend technologies</span> and
+            building web applications as weekend projects. <br />
+            4th grade student of computer engineering at the
+            <span style="color: #0085d0">Pamukkale University.</span> <br />
+            Core-team member at
+            <a
+              href="https://pausiber.xyz/"
+              target="_blank"
+              style="color: #eebf3f"
+            >
+              Pausiber,
+            </a>
+            Pamukkale University Cyber-Security Community. <br />
+            Currently working as a web developer at
+            <a
+              href="https://www.jotform.com/"
+              target="_blank"
+              style="color: #ff6100"
+            >
+              Jotform.</a
+            >
+            <br />
+          </p>
+        </div>
+        <p class="contact-text" style="text-align: center">
+          Thanks for visiting my website! <br />
+          If you have any questions, feel free to contact me via socials on
+          left.
+        </p>
+      </section>
 
-        <section class="section my-services" data-section="section2">
-          <div class="container">
-            <div class="section-heading">
-              <h2>Skills</h2>
-              <div class="line-dec"></div>
-              <span
-                >I am still developing myself only in frontend development, but
-                I will continue to improve my skills in many different areas as
-                soon as possible.</span
-              >
-            </div>
-            <div class="row service-item-container">
-              <div class="service-item">
-                <i class="fab fa-html5 fa-3x"></i>
-                <!-- <h4><span class="makeItPink">HTML</span></h4> -->
-              </div>
-
-              <div class="service-item">
-                <i class="fab fa-css3-alt fa-3x"></i>
-                <!-- <h4><span class="makeItPink">CSS</span></h4> -->
-              </div>
-
-              <div class="service-item">
-                <i class="fab fa-sass fa-3x"></i>
-                <!-- <h4><span class="makeItPink">SASS</span></h4> -->
-              </div>
-
-              <div class="service-item">
-                <i class="fab fa-js-square fa-3x"></i>
-                <!-- <h4><span class="makeItPink">JavaScript</span></h4> -->
-              </div>
-
-              <div class="service-item">
-                <i class="fab fa-vuejs fa-3x"></i>
-                <!-- <h4><span class="makeItPink">Vue.js</span></h4> -->
-              </div>
-
-              <div class="service-item">
-                <i class="fab fa-react fa-3x"></i>
-                <!-- <h4><span class="makeItPink">React.js</span></h4> -->
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section my-work" data-section="section3">
-          <div class="container">
-            <div class="section-heading">
-              <h2>My Projects</h2>
-              <div class="line-dec"></div>
-              <span
-                >Here is my projects below. You can see their descriptions,
-                demos and source codes by clicking on them.
-              </span>
-            </div>
-            <div class="row">
-              <div class="isotope-wrapper">
-                <div class="isotope-box">
-                  <div class="isotope-item">
-                    <figure class="snip1321">
-                      <img src="./img/projects/todo.png" alt="" />
-                      <figcaption>
-                        <a
-                          href="https://easiest-todo-app.netlify.app/"
-                          target="_blank"
-                          ><i class="fas fa-location-arrow"></i
-                        ></a>
-                        <a
-                          href="https://github.com/Szqii/Easiest-Todo-App"
-                          target="_blank"
-                        >
-                          <i class="fas fa-code-branch"></i>
-                        </a>
-                        <h4>Easiest Todo App</h4>
-                        <span>Cool designed todo app using local storage.</span>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="isotope-item">
-                    <figure class="snip1321">
-                      <img src="./img/projects/vuerld.png" alt="" />
-                      <figcaption>
-                        <a href="https://vuerld.netlify.app/" target="_blank"
-                          ><i class="fas fa-location-arrow"></i
-                        ></a>
-                        <a
-                          href="https://github.com/Szqii/Vuerld"
-                          target="_blank"
-                        >
-                          <i class="fas fa-code-branch"></i>
-                        </a>
-                        <h4>Vuerld</h4>
-                        <span
-                          >Vuerld provides access to detailed information of
-                          every country in the world.</span
-                        >
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="isotope-item">
-                    <figure class="snip1321">
-                      <img src="./img/projects/wwwa.png" alt="" />
-                      <figcaption>
-                        <a href="https://wwwa.netlify.app/" target="_blank"
-                          ><i class="fas fa-location-arrow"></i
-                        ></a>
-                        <a
-                          href="https://github.com/Szqii/Worldwide-Weather-App"
-                          target="_blank"
-                        >
-                          <i class="fas fa-code-branch"></i>
-                        </a>
-                        <h4>Worldwide Weather App</h4>
-                        <span>
-                          Worldwide Weather App (or WWWA) is an app that shows
-                          current weather forecast in the selected city.
-                        </span>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="isotope-item">
-                    <figure class="snip1321">
-                      <img src="./img/projects/beeant.png" alt="" />
-                      <figcaption>
-                        <a href="https://beeant.netlify.app/" target="_blank"
-                          ><i class="fas fa-location-arrow"></i
-                        ></a>
-                        <a
-                          href="https://github.com/Szqii/beeant"
-                          target="_blank"
-                        >
-                          <i class="fas fa-code-branch"></i>
-                        </a>
-                        <h4>Beeant</h4>
-                        <span
-                          >Beeant is a platform where you can ask and answer as
-                          many questions as you want.
-                          <br />
-                          Contributed to develop UI.</span
-                        >
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="isotope-item">
-                    <figure class="snip1321">
-                      <img src="./img/projects/js30.png" alt="" />
-                      <figcaption>
-                        <!-- No live website -->
-                        <a
-                          href="https://github.com/Szqii/JavaScript30"
-                          target="_blank"
-                        >
-                          <i class="fas fa-code-branch"></i>
-                        </a>
-                        <h4>JavaScript30</h4>
-                        <span
-                          >30 live vanilla JavaScript projects on 30 days</span
-                        >
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section contact-me" data-section="section4">
-          <div class="container">
-            <div class="section-heading">
-              <h2>Contact Me</h2>
-              <div class="line-dec"></div>
-              <span
-                >You can see my social information below. <br />
-                I look forward to you contacting me via any of them.</span
-              >
-              <div class="contact-socials">
-                <ul class="contact-icons">
-                  <li>
-                    <a href="https://github.com/Szqii" target="_blank"
-                      ><i class="fa fa-github fa-3x"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/sezgi-altan/"
-                      target="_blank"
-                      ><i class="fa fa-linkedin fa-3x"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="mailto:szqii.altn@gmail.com" target="_blank"
-                      ><i class="fa fa-envelope fa-3x"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/Szq_ii" target="_blank"
-                      ><i class="fa fa-twitter fa-3x"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/szq_ii" target="_blank"
-                      ><i class="fa fa-instagram fa-3x"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="contact-page">
-              <div class="container">
-                <div class="form">
-                  <h2>Say Hello...</h2>
-                  <form id="contact" action="" method="post">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <fieldset>
-                          <input
-                            name="name"
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="Your name"
-                            required=""
-                          />
-                        </fieldset>
-                      </div>
-                      <!-- <div class="col-md-6">
-                          <fieldset>
-                            <input
-                              name="email"
-                              type="email"
-                              class="form-control"
-                              id="email"
-                              placeholder="Your email adress"
-                              required=""
-                            />
-                          </fieldset>
-                        </div> -->
-                      <div class="col-md-6">
-                        <fieldset>
-                          <input
-                            name="subject"
-                            type="text"
-                            class="form-control"
-                            id="subject"
-                            placeholder="What do you want to talk about"
-                            required=""
-                          />
-                        </fieldset>
-                      </div>
-                      <div class="col-md-12">
-                        <fieldset>
-                          <textarea
-                            name="message"
-                            rows="4"
-                            class="form-control"
-                            id="message"
-                            placeholder="Your message"
-                            required=""
-                          ></textarea>
-                        </fieldset>
-                      </div>
-                      <div class="col-md-12 mt-3 d-flex justify-content-end">
-                        <a
-                          id="form-submit"
-                          class="link"
-                          href="mailto:szqii.altn@gmail.com"
-                        >
-                          Let's talk
-                        </a>
-                      </div>
+      <section class="project-section" id="project-section">
+        <div class="project-text">
+          <p>
+            Here are some of the projects I've worked on. <br />
+            Click on the project to see website.
+          </p>
+        </div>
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <a href="https://split-my-bill.netlify.app" target="_blank">
+                  <div class="card">
+                    <img src="./assets/project-splitter.png" alt="" />
+                    <div class="card-text">
+                      <h2>Bill Splitter</h2>
+                      <p>
+                        A web application that allows users to split a bill
+                        between multiple people with customizable tip
+                        percentages.
+                      </p>
                     </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://some-advice.netlify.app" target="_blank">
+                  <div class="card">
+                    <img src="./assets/project-advice-generator.png" alt="" />
+                    <div class="card-text">
+                      <h2>Advice Generator</h2>
+                      <p>
+                        A web application that generates random advice for
+                        users, using Advice Slip API.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://pausiber-bank.netlify.app" target="_blank">
+                  <div class="card">
+                    <img src="./assets/project-bank-app.png" alt="" />
+                    <div class="card-text">
+                      <h2>Pausiber Bank App</h2>
+                      <p>
+                        A web application that allows users to manage their bank
+                        account. It allows users to deposit and withdraw money.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://eilish-clothing.netlify.app" target="_blank">
+                  <div class="card">
+                    <img src="./assets/project-clothing-store.png" alt="" />
+                    <div class="card-text">
+                      <h2>Eilish Clothing</h2>
+                      <p>
+                        A web application that allows create an account, login
+                        and manage their shopping cart.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://beat-me-rps.netlify.app" target="_blank">
+                  <div class="card">
+                    <img src="./assets/project-rps.png" alt="" />
+                    <div class="card-text">
+                      <h2>Beat Me RPS</h2>
+                      <p>
+                        A web application that allows users to play a game of
+                        Rock, Paper, Scissors against a computer.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://to-be-done.netlify.app" target="_blank">
+                  <div class="card">
+                    <img src="./assets/project-todos.png" alt="" />
+                    <div class="card-text">
+                      <h2>Todos</h2>
+                      <p>
+                        A web application that allows users to create a todo
+                        list. User can filter todos by all, active and
+                        completed.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://geo-geo.netlify.app" target="_blank">
+                  <div class="card">
+                    <img src="./assets/project-world-app.png" alt="" />
+                    <div class="card-text">
+                      <h2>Geo Geo</h2>
+                      <p>
+                        A web application that allows users to search for
+                        countries filtering by regions and input, with
+                        cool-looking dark mode. It also allows users to see
+                        informations about countries.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="https://wwwa.netlify.app" target="_blank">
+                  <div class="card">
+                    <img src="./assets/project-wwwa.png" alt="" />
+                    <div class="card-text">
+                      <h2>WWWA</h2>
+                      <p>
+                        A web application that allows users to search for
+                        weather conditions in a specific city around the world.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
-        </section>
+        </div>
+        <div class="skills">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+            rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
+              alt="Javascript"
+          /></a>
+          <a
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
+              alt="Typescript"
+          /></a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+            target="_blank"
+            rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
+              alt="HTML5"
+          /></a>
+          <a href="https://reactjs.org/" target="_blank" rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+              alt="React"
+          /></a>
+          <a href="https://vuejs.org/" target="_blank" rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg"
+              alt="Vue"
+          /></a>
+          <a
+            href="https://www.w3.org/TR/CSS/#css"
+            target="_blank"
+            rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
+              alt="CSS3"
+          /></a>
+          <a href="https://sass-lang.com/" target="_blank" rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg"
+              alt="Sass"
+          /></a>
+          <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg"
+              alt="Bootstrap"
+          /></a>
+          <a href="https://www.heroku.com/" target="_blank" rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/heroku-colored.svg"
+              alt="Heroku"
+          /></a>
+          <a
+            href="https://firebase.google.com/"
+            target="_blank"
+            rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg"
+              alt="Firebase"
+          /></a>
+          <a href="https://www.figma.com/" target="_blank" rel="noreferrer"
+            ><img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg"
+              alt="Figma"
+          /></a>
+        </div>
+      </section>
+      <div class="contact-list">
+        <div class="contact-item" id="gmail">
+          <div class="contact-btn" style="left: 0">
+            <a
+              href="mailto:szqii.altn@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./assets/gmail-icon.svg" width="44" />
+              <span style="color: #fbbc05">szqii.altn</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item" id="twitter">
+          <div class="contact-btn">
+            <a
+              href="https://www.twitter.com/devsezgi"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg"
+                width="44px"
+              />
+              <span style="color: #1d9bf0">/devsezgi</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item" id="github">
+          <div class="contact-btn">
+            <a
+              href="https://www.github.com/Szqii"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg"
+                width="44"
+              />
+              <span style="color: #ffffff">/szqii</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item" id="linkedin">
+          <div class="contact-btn">
+            <a
+              href="https://www.linkedin.com/in/sezgialtan"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg"
+                width="44px"
+              />
+              <span style="color: #0a66c2">/sezgialtan</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item" id="instagram">
+          <div class="contact-btn">
+            <a
+              href="http://www.instagram.com/sezgi.dev"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg"
+                width="44"
+              />
+              <span style="color: #e1306c">/sezgi.dev</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item" id="discord">
+          <div class="contact-btn" style="left: 0">
+            <a
+              href="https://discord.com/users/284727475047628810"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg"
+                width="44"
+              />
+              <span style="color: #5865f2">Sezgi#8575</span>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script
-      src="https://kit.fontawesome.com/160edd8076.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/jquery/jquery.min.js"></script>
-    <script src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script>
-      // Contact Email
-      var nameInput = document.getElementById("name");
-      var subjectInput = document.getElementById("subject");
-      var messageInput = document.getElementById("message");
-
-      var btn = document.getElementsByClassName("link");
-
-      btn.onlick = () => {
-        document.getElementsByClassName(
-          "link"
-        ).href = `mailto:szqii.altn@gmail.com?subject=${subjectInput.value}&body=${messageInput.value}`;
-      };
+      new Splide(".splide", {
+        autoScroll: {
+          speed: 3,
+          rewind: true,
+        },
+        type: "loop",
+        drag: "free",
+        perPage: 3,
+      }).mount(window.splide.Extensions);
     </script>
+    <script src="./script.js"></script>
   </body>
 </html>
