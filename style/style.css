@@ -89,6 +89,8 @@ header .header-container {
       -ms-flex-align: center;
           align-items: center;
   width: 600px;
+  max-width: 100%;
+  padding: 0 20px;
 }
 
 header .header-container .navigation-btn {
@@ -154,9 +156,8 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -176,7 +177,7 @@ section {
 
 .project-section .splide .card {
   position: relative;
-  width: 600px;
+  width: 95%;
   max-height: 338px;
   overflow: hidden;
   -webkit-transition: 0.2s all ease-in-out;
@@ -226,16 +227,26 @@ section {
 }
 
 .project-section .skills {
-  position: absolute;
-  bottom: 50px;
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .project-section .skills a {
-  margin: 0 2px;
+  margin: 10px 0;
+  width: 74px;
+  text-align: center;
 }
 
 .project-section .skills a img {
-  width: 48px;
+  width: 44px;
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
@@ -274,7 +285,7 @@ section {
 }
 
 .about-section .about-text {
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .navigation-btn,
@@ -343,6 +354,10 @@ section {
   width: 15rem;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .contact-btn {
   max-width: 74px;
   padding: 15px;
@@ -392,5 +407,194 @@ section {
 .contact-btn:hover span {
   max-width: 15rem;
   margin-left: 20px;
+}
+
+@media (max-width: 1440px) {
+  .splide {
+    width: 85% !important;
+  }
+  /*   .card {
+    width: 500px !important;
+  } */
+  .splide__slide {
+    width: 50% !important;
+  }
+  .skills a {
+    margin: 5px 0 !important;
+  }
+  .project-text {
+    font-size: 20px;
+  }
+  .contact-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /*   .card {
+    width: 400px !important;
+  } */
+  .splide {
+    width: 80% !important;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 94px;
+  }
+  .splide .splide__slide {
+    width: 75% !important;
+  }
+  .about-section {
+    padding: 0;
+  }
+  .about-section .about-container {
+    font-size: 20px;
+    padding: 0 15rem;
+  }
+  .about-section .contact-text {
+    font-size: 20px;
+  }
+  .contact-btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    font-size: 20px !important;
+  }
+  .about-section {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-container {
+    font-size: 16px !important;
+    padding: 0 10rem !important;
+    margin-top: 70px !important;
+  }
+  .contact-btn a img {
+    width: 32px;
+  }
+  .home-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 110px !important;
+  }
+  /*   .contact-list {
+    height: calc(100vh - 100px);
+    justify-content: space-around;
+  } */
+  .contact-text {
+    font-size: 16px !important;
+    margin-bottom: 50px !important;
+  }
+  .splide {
+    margin: 0;
+    width: 95% !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .splide .splide__slide {
+    width: 50% !important;
+  }
+  .project-text {
+    font-size: 16px;
+  }
+  .card-text {
+    font-size: 12px !important;
+  }
+  .card-text h2 {
+    font-size: 16px !important;
+  }
+  .skills {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    top: auto !important;
+    left: auto !important;
+    bottom: 20px !important;
+    width: 100%;
+    padding: 0 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skills a {
+    width: 32px !important;
+    margin: 0 10px !important;
+  }
+  .skills a img {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-container {
+    font-size: 16px !important;
+  }
+  /*   .home-text {
+    flex-direction: column;
+    height: 110px !important;
+  } */
+  .about-section {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .about-section .about-container {
+    padding: 0 20px !important;
+    margin: 0 !important;
+  }
+  .about-section .about-text {
+    line-height: 1.8 !important;
+  }
+  .about-section .contact-text {
+    padding: 0 10px;
+  }
+  .contact-list {
+    height: auto !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    top: auto !important;
+    left: 0 !important;
+    bottom: 20px !important;
+    width: 100% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-list .divider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-list .divider .contact-item {
+    width: 100% !important;
+  }
+  .splide {
+    margin: 0;
+    width: 95% !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .splide .splide__slide {
+    width: 85% !important;
+  }
+  .skills a {
+    margin: 2px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-section .about-text {
+    line-height: 1.3 !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
