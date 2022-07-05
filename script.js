@@ -50,6 +50,8 @@ const setButtonActive = (section) => {
   }
 };
 
+setButtonActive("home-section"); // Set the home section as active by default
+
 observer.observe(document.querySelector(".home-section"));
 observer.observe(document.querySelector(".about-section"));
 observer.observe(document.querySelector(".project-section"));
