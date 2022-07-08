@@ -51,13 +51,6 @@ header {
     max-width: 100%;
     padding: 0 20px;
 
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
     .navigation-btn {
       position: relative;
       padding: 5px 10px;
@@ -65,13 +58,15 @@ header {
       width: 175px;
       text-align: center;
       cursor: pointer;
+      // Remove mobile tap highlight
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
   }
 }
 // Main - Scroll effect
 .scroll-container {
-  height: calc(100vh - 100px);
-  margin-top: 100px;
+  height: 100vh;
+
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -477,6 +472,10 @@ section {
     a {
       margin: 2px !important;
     }
+  }
+
+  .project-text {
+    padding: 0 20px;
   }
 }
 

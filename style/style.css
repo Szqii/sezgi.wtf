@@ -91,11 +91,6 @@ header .header-container {
   width: 600px;
   max-width: 100%;
   padding: 0 20px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 header .header-container .navigation-btn {
@@ -105,11 +100,11 @@ header .header-container .navigation-btn {
   width: 175px;
   text-align: center;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .scroll-container {
-  height: calc(100vh - 100px);
-  margin-top: 100px;
+  height: 100vh;
   overflow-y: scroll;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
@@ -594,6 +589,9 @@ section {
   }
   .skills a {
     margin: 2px !important;
+  }
+  .project-text {
+    padding: 0 20px;
   }
 }
 
