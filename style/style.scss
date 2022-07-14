@@ -31,6 +31,23 @@ body {
   color: #9dc183;
   background-color: #101010;
 }
+
+.user-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #9dc183;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover {
+    animation: shake 0.3s 2 linear;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -70,14 +87,13 @@ header {
 // Main - Scroll effect
 .scroll-container {
   height: 100vh;
-
+  padding-top: 100px; // To make the header fixed
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 section {
   height: calc(100vh - 100px);
-  margin-top: 100px;
   scroll-snap-align: center;
 }
 
@@ -459,6 +475,9 @@ section {
       display: flex;
       .contact-item {
         width: 100% !important;
+        .contact-btn {
+          padding: 10px !important;
+        }
       }
     }
   }
