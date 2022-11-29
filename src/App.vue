@@ -1,26 +1,53 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Loading v-if="loading" />
+  <router-view v-else></router-view>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import Loading from "./components/Loading.vue";
+import { ref, onMounted } from "vue";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+const loading = ref(true);
+
+onMounted(() => {
+  setTimeout(() => {
+    loading.value = false;
+  }, 4000);
+});
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap");
+@import url(./css/animations.css);
+@import url(./css/scrollbar.css);
+
+:root {
+  --primary-text-color: #4fff23;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+
+  overflow-x: hidden;
+  background-color: #000;
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  animation: fadeIn 4s ease-in-out 3.8s 1; // 4s delay, 1 iteration
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  max-width: 100%;
+  height: 100%;
 }
 </style>

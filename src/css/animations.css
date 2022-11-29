@@ -1,0 +1,1712 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: none;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes backColourRotate {
+  from {
+    background: linear-gradient(
+      90deg,
+      #ff7575 0%,
+      #ff9875 4%,
+      #ffba75 8%,
+      #ffdd75 12%,
+      #ffff75 16%,
+      #ddff75 20%,
+      #baff75 24%,
+      #98ff75 28%,
+      #75ff75 32%,
+      #75ff98 36%,
+      #75ffba 40%,
+      #75ffdd 44%,
+      #75ffff 48%,
+      #75ddff 52%,
+      #75baff 56%,
+      #7598ff 60%,
+      #7575ff 64%,
+      #9875ff 68%,
+      #ba75ff 72%,
+      #dd75ff 76%,
+      #ff75ff 80%,
+      #ff75dd 84%,
+      #ff75ba 88%,
+      #ff7598 92%,
+      #ff7575 96%
+    );
+    -webkit-background-clip: text;
+  }
+  4% {
+    background: linear-gradient(
+      90deg,
+      #ff9875 0%,
+      #ffba75 4%,
+      #ffdd75 8%,
+      #ffff75 12%,
+      #ddff75 16%,
+      #baff75 20%,
+      #98ff75 24%,
+      #75ff75 28%,
+      #75ff98 32%,
+      #75ffba 36%,
+      #75ffdd 40%,
+      #75ffff 44%,
+      #75ddff 48%,
+      #75baff 52%,
+      #7598ff 56%,
+      #7575ff 60%,
+      #9875ff 64%,
+      #ba75ff 68%,
+      #dd75ff 72%,
+      #ff75ff 76%,
+      #ff75dd 80%,
+      #ff75ba 84%,
+      #ff7598 88%,
+      #ff7575 92%,
+      #ff7575 96%
+    );
+    -webkit-background-clip: text;
+  }
+  8% {
+    background: linear-gradient(
+      90deg,
+      #ffba75 0%,
+      #ffdd75 4%,
+      #ffff75 8%,
+      #ddff75 12%,
+      #baff75 16%,
+      #98ff75 20%,
+      #75ff75 24%,
+      #75ff98 28%,
+      #75ffba 32%,
+      #75ffdd 36%,
+      #75ffff 40%,
+      #75ddff 44%,
+      #75baff 48%,
+      #7598ff 52%,
+      #7575ff 56%,
+      #9875ff 60%,
+      #ba75ff 64%,
+      #dd75ff 68%,
+      #ff75ff 72%,
+      #ff75dd 76%,
+      #ff75ba 80%,
+      #ff7598 84%,
+      #ff7575 88%,
+      #ff7575 92%,
+      #ff9875 96%
+    );
+    -webkit-background-clip: text;
+  }
+  12% {
+    background: linear-gradient(
+      90deg,
+      #ffdd75 0%,
+      #ffff75 4%,
+      #ddff75 8%,
+      #baff75 12%,
+      #98ff75 16%,
+      #75ff75 20%,
+      #75ff98 24%,
+      #75ffba 28%,
+      #75ffdd 32%,
+      #75ffff 36%,
+      #75ddff 40%,
+      #75baff 44%,
+      #7598ff 48%,
+      #7575ff 52%,
+      #9875ff 56%,
+      #ba75ff 60%,
+      #dd75ff 64%,
+      #ff75ff 68%,
+      #ff75dd 72%,
+      #ff75ba 76%,
+      #ff7598 80%,
+      #ff7575 84%,
+      #ff7575 88%,
+      #ff9875 92%,
+      #ffba75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  16% {
+    background: linear-gradient(
+      90deg,
+      #ffff75 0%,
+      #ddff75 4%,
+      #baff75 8%,
+      #98ff75 12%,
+      #75ff75 16%,
+      #75ff98 20%,
+      #75ffba 24%,
+      #75ffdd 28%,
+      #75ffff 32%,
+      #75ddff 36%,
+      #75baff 40%,
+      #7598ff 44%,
+      #7575ff 48%,
+      #9875ff 52%,
+      #ba75ff 56%,
+      #dd75ff 60%,
+      #ff75ff 64%,
+      #ff75dd 68%,
+      #ff75ba 72%,
+      #ff7598 76%,
+      #ff7575 80%,
+      #ff7575 84%,
+      #ff9875 88%,
+      #ffba75 92%,
+      #ffdd75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  20% {
+    background: linear-gradient(
+      90deg,
+      #ddff75 0%,
+      #baff75 4%,
+      #98ff75 8%,
+      #75ff75 12%,
+      #75ff98 16%,
+      #75ffba 20%,
+      #75ffdd 24%,
+      #75ffff 28%,
+      #75ddff 32%,
+      #75baff 36%,
+      #7598ff 40%,
+      #7575ff 44%,
+      #9875ff 48%,
+      #ba75ff 52%,
+      #dd75ff 56%,
+      #ff75ff 60%,
+      #ff75dd 64%,
+      #ff75ba 68%,
+      #ff7598 72%,
+      #ff7575 76%,
+      #ff7575 80%,
+      #ff9875 84%,
+      #ffba75 88%,
+      #ffdd75 92%,
+      #ffff75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  24% {
+    background: linear-gradient(
+      90deg,
+      #baff75 0%,
+      #98ff75 4%,
+      #75ff75 8%,
+      #75ff98 12%,
+      #75ffba 16%,
+      #75ffdd 20%,
+      #75ffff 24%,
+      #75ddff 28%,
+      #75baff 32%,
+      #7598ff 36%,
+      #7575ff 40%,
+      #9875ff 44%,
+      #ba75ff 48%,
+      #dd75ff 52%,
+      #ff75ff 56%,
+      #ff75dd 60%,
+      #ff75ba 64%,
+      #ff7598 68%,
+      #ff7575 72%,
+      #ff7575 76%,
+      #ff9875 80%,
+      #ffba75 84%,
+      #ffdd75 88%,
+      #ffff75 92%,
+      #ddff75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  28% {
+    background: linear-gradient(
+      90deg,
+      #98ff75 0%,
+      #75ff75 4%,
+      #75ff98 8%,
+      #75ffba 12%,
+      #75ffdd 16%,
+      #75ffff 20%,
+      #75ddff 24%,
+      #75baff 28%,
+      #7598ff 32%,
+      #7575ff 36%,
+      #9875ff 40%,
+      #ba75ff 44%,
+      #dd75ff 48%,
+      #ff75ff 52%,
+      #ff75dd 56%,
+      #ff75ba 60%,
+      #ff7598 64%,
+      #ff7575 68%,
+      #ff7575 72%,
+      #ff9875 76%,
+      #ffba75 80%,
+      #ffdd75 84%,
+      #ffff75 88%,
+      #ddff75 92%,
+      #baff75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  32% {
+    background: linear-gradient(
+      90deg,
+      #75ff75 0%,
+      #75ff98 4%,
+      #75ffba 8%,
+      #75ffdd 12%,
+      #75ffff 16%,
+      #75ddff 20%,
+      #75baff 24%,
+      #7598ff 28%,
+      #7575ff 32%,
+      #9875ff 36%,
+      #ba75ff 40%,
+      #dd75ff 44%,
+      #ff75ff 48%,
+      #ff75dd 52%,
+      #ff75ba 56%,
+      #ff7598 60%,
+      #ff7575 64%,
+      #ff7575 68%,
+      #ff9875 72%,
+      #ffba75 76%,
+      #ffdd75 80%,
+      #ffff75 84%,
+      #ddff75 88%,
+      #baff75 92%,
+      #98ff75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  36% {
+    background: linear-gradient(
+      90deg,
+      #75ff98 0%,
+      #75ffba 4%,
+      #75ffdd 8%,
+      #75ffff 12%,
+      #75ddff 16%,
+      #75baff 20%,
+      #7598ff 24%,
+      #7575ff 28%,
+      #9875ff 32%,
+      #ba75ff 36%,
+      #dd75ff 40%,
+      #ff75ff 44%,
+      #ff75dd 48%,
+      #ff75ba 52%,
+      #ff7598 56%,
+      #ff7575 60%,
+      #ff7575 64%,
+      #ff9875 68%,
+      #ffba75 72%,
+      #ffdd75 76%,
+      #ffff75 80%,
+      #ddff75 84%,
+      #baff75 88%,
+      #98ff75 92%,
+      #75ff75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  40% {
+    background: linear-gradient(
+      90deg,
+      #75ffba 0%,
+      #75ffdd 4%,
+      #75ffff 8%,
+      #75ddff 12%,
+      #75baff 16%,
+      #7598ff 20%,
+      #7575ff 24%,
+      #9875ff 28%,
+      #ba75ff 32%,
+      #dd75ff 36%,
+      #ff75ff 40%,
+      #ff75dd 44%,
+      #ff75ba 48%,
+      #ff7598 52%,
+      #ff7575 56%,
+      #ff7575 60%,
+      #ff9875 64%,
+      #ffba75 68%,
+      #ffdd75 72%,
+      #ffff75 76%,
+      #ddff75 80%,
+      #baff75 84%,
+      #98ff75 88%,
+      #75ff75 92%,
+      #75ff98 96%
+    );
+    -webkit-background-clip: text;
+  }
+  44% {
+    background: linear-gradient(
+      90deg,
+      #75ffdd 0%,
+      #75ffff 4%,
+      #75ddff 8%,
+      #75baff 12%,
+      #7598ff 16%,
+      #7575ff 20%,
+      #9875ff 24%,
+      #ba75ff 28%,
+      #dd75ff 32%,
+      #ff75ff 36%,
+      #ff75dd 40%,
+      #ff75ba 44%,
+      #ff7598 48%,
+      #ff7575 52%,
+      #ff7575 56%,
+      #ff9875 60%,
+      #ffba75 64%,
+      #ffdd75 68%,
+      #ffff75 72%,
+      #ddff75 76%,
+      #baff75 80%,
+      #98ff75 84%,
+      #75ff75 88%,
+      #75ff98 92%,
+      #75ffba 96%
+    );
+    -webkit-background-clip: text;
+  }
+  48% {
+    background: linear-gradient(
+      90deg,
+      #75ffff 0%,
+      #75ddff 4%,
+      #75baff 8%,
+      #7598ff 12%,
+      #7575ff 16%,
+      #9875ff 20%,
+      #ba75ff 24%,
+      #dd75ff 28%,
+      #ff75ff 32%,
+      #ff75dd 36%,
+      #ff75ba 40%,
+      #ff7598 44%,
+      #ff7575 48%,
+      #ff7575 52%,
+      #ff9875 56%,
+      #ffba75 60%,
+      #ffdd75 64%,
+      #ffff75 68%,
+      #ddff75 72%,
+      #baff75 76%,
+      #98ff75 80%,
+      #75ff75 84%,
+      #75ff98 88%,
+      #75ffba 92%,
+      #75ffdd 96%
+    );
+    -webkit-background-clip: text;
+  }
+  52% {
+    background: linear-gradient(
+      90deg,
+      #75ddff 0%,
+      #75baff 4%,
+      #7598ff 8%,
+      #7575ff 12%,
+      #9875ff 16%,
+      #ba75ff 20%,
+      #dd75ff 24%,
+      #ff75ff 28%,
+      #ff75dd 32%,
+      #ff75ba 36%,
+      #ff7598 40%,
+      #ff7575 44%,
+      #ff7575 48%,
+      #ff9875 52%,
+      #ffba75 56%,
+      #ffdd75 60%,
+      #ffff75 64%,
+      #ddff75 68%,
+      #baff75 72%,
+      #98ff75 76%,
+      #75ff75 80%,
+      #75ff98 84%,
+      #75ffba 88%,
+      #75ffdd 92%,
+      #75ffff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  56% {
+    background: linear-gradient(
+      90deg,
+      #75baff 0%,
+      #7598ff 4%,
+      #7575ff 8%,
+      #9875ff 12%,
+      #ba75ff 16%,
+      #dd75ff 20%,
+      #ff75ff 24%,
+      #ff75dd 28%,
+      #ff75ba 32%,
+      #ff7598 36%,
+      #ff7575 40%,
+      #ff7575 44%,
+      #ff9875 48%,
+      #ffba75 52%,
+      #ffdd75 56%,
+      #ffff75 60%,
+      #ddff75 64%,
+      #baff75 68%,
+      #98ff75 72%,
+      #75ff75 76%,
+      #75ff98 80%,
+      #75ffba 84%,
+      #75ffdd 88%,
+      #75ffff 92%,
+      #75ddff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  60% {
+    background: linear-gradient(
+      90deg,
+      #7598ff 0%,
+      #7575ff 4%,
+      #9875ff 8%,
+      #ba75ff 12%,
+      #dd75ff 16%,
+      #ff75ff 20%,
+      #ff75dd 24%,
+      #ff75ba 28%,
+      #ff7598 32%,
+      #ff7575 36%,
+      #ff7575 40%,
+      #ff9875 44%,
+      #ffba75 48%,
+      #ffdd75 52%,
+      #ffff75 56%,
+      #ddff75 60%,
+      #baff75 64%,
+      #98ff75 68%,
+      #75ff75 72%,
+      #75ff98 76%,
+      #75ffba 80%,
+      #75ffdd 84%,
+      #75ffff 88%,
+      #75ddff 92%,
+      #75baff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  64% {
+    background: linear-gradient(
+      90deg,
+      #7575ff 0%,
+      #9875ff 4%,
+      #ba75ff 8%,
+      #dd75ff 12%,
+      #ff75ff 16%,
+      #ff75dd 20%,
+      #ff75ba 24%,
+      #ff7598 28%,
+      #ff7575 32%,
+      #ff7575 36%,
+      #ff9875 40%,
+      #ffba75 44%,
+      #ffdd75 48%,
+      #ffff75 52%,
+      #ddff75 56%,
+      #baff75 60%,
+      #98ff75 64%,
+      #75ff75 68%,
+      #75ff98 72%,
+      #75ffba 76%,
+      #75ffdd 80%,
+      #75ffff 84%,
+      #75ddff 88%,
+      #75baff 92%,
+      #7598ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  68% {
+    background: linear-gradient(
+      90deg,
+      #9875ff 0%,
+      #ba75ff 4%,
+      #dd75ff 8%,
+      #ff75ff 12%,
+      #ff75dd 16%,
+      #ff75ba 20%,
+      #ff7598 24%,
+      #ff7575 28%,
+      #ff7575 32%,
+      #ff9875 36%,
+      #ffba75 40%,
+      #ffdd75 44%,
+      #ffff75 48%,
+      #ddff75 52%,
+      #baff75 56%,
+      #98ff75 60%,
+      #75ff75 64%,
+      #75ff98 68%,
+      #75ffba 72%,
+      #75ffdd 76%,
+      #75ffff 80%,
+      #75ddff 84%,
+      #75baff 88%,
+      #7598ff 92%,
+      #7575ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  72% {
+    background: linear-gradient(
+      90deg,
+      #ba75ff 0%,
+      #dd75ff 4%,
+      #ff75ff 8%,
+      #ff75dd 12%,
+      #ff75ba 16%,
+      #ff7598 20%,
+      #ff7575 24%,
+      #ff7575 28%,
+      #ff9875 32%,
+      #ffba75 36%,
+      #ffdd75 40%,
+      #ffff75 44%,
+      #ddff75 48%,
+      #baff75 52%,
+      #98ff75 56%,
+      #75ff75 60%,
+      #75ff98 64%,
+      #75ffba 68%,
+      #75ffdd 72%,
+      #75ffff 76%,
+      #75ddff 80%,
+      #75baff 84%,
+      #7598ff 88%,
+      #7575ff 92%,
+      #9875ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  76% {
+    background: linear-gradient(
+      90deg,
+      #dd75ff 0%,
+      #ff75ff 4%,
+      #ff75dd 8%,
+      #ff75ba 12%,
+      #ff7598 16%,
+      #ff7575 20%,
+      #ff7575 24%,
+      #ff9875 28%,
+      #ffba75 32%,
+      #ffdd75 36%,
+      #ffff75 40%,
+      #ddff75 44%,
+      #baff75 48%,
+      #98ff75 52%,
+      #75ff75 56%,
+      #75ff98 60%,
+      #75ffba 64%,
+      #75ffdd 68%,
+      #75ffff 72%,
+      #75ddff 76%,
+      #75baff 80%,
+      #7598ff 84%,
+      #7575ff 88%,
+      #9875ff 92%,
+      #ba75ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  80% {
+    background: linear-gradient(
+      90deg,
+      #ff75ff 0%,
+      #ff75dd 4%,
+      #ff75ba 8%,
+      #ff7598 12%,
+      #ff7575 16%,
+      #ff7575 20%,
+      #ff9875 24%,
+      #ffba75 28%,
+      #ffdd75 32%,
+      #ffff75 36%,
+      #ddff75 40%,
+      #baff75 44%,
+      #98ff75 48%,
+      #75ff75 52%,
+      #75ff98 56%,
+      #75ffba 60%,
+      #75ffdd 64%,
+      #75ffff 68%,
+      #75ddff 72%,
+      #75baff 76%,
+      #7598ff 80%,
+      #7575ff 84%,
+      #9875ff 88%,
+      #ba75ff 92%,
+      #dd75ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  84% {
+    background: linear-gradient(
+      90deg,
+      #ff75dd 0%,
+      #ff75ba 4%,
+      #ff7598 8%,
+      #ff7575 12%,
+      #ff7575 16%,
+      #ff9875 20%,
+      #ffba75 24%,
+      #ffdd75 28%,
+      #ffff75 32%,
+      #ddff75 36%,
+      #baff75 40%,
+      #98ff75 44%,
+      #75ff75 48%,
+      #75ff98 52%,
+      #75ffba 56%,
+      #75ffdd 60%,
+      #75ffff 64%,
+      #75ddff 68%,
+      #75baff 72%,
+      #7598ff 76%,
+      #7575ff 80%,
+      #9875ff 84%,
+      #ba75ff 88%,
+      #dd75ff 92%,
+      #ff75ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  88% {
+    background: linear-gradient(
+      90deg,
+      #ff75ba 0%,
+      #ff7598 4%,
+      #ff7575 8%,
+      #ff7575 12%,
+      #ff9875 16%,
+      #ffba75 20%,
+      #ffdd75 24%,
+      #ffff75 28%,
+      #ddff75 32%,
+      #baff75 36%,
+      #98ff75 40%,
+      #75ff75 44%,
+      #75ff98 48%,
+      #75ffba 52%,
+      #75ffdd 56%,
+      #75ffff 60%,
+      #75ddff 64%,
+      #75baff 68%,
+      #7598ff 72%,
+      #7575ff 76%,
+      #9875ff 80%,
+      #ba75ff 84%,
+      #dd75ff 88%,
+      #ff75ff 92%,
+      #ff75dd 96%
+    );
+    -webkit-background-clip: text;
+  }
+  92% {
+    background: linear-gradient(
+      90deg,
+      #ff7598 0%,
+      #ff7575 4%,
+      #ff7575 8%,
+      #ff9875 12%,
+      #ffba75 16%,
+      #ffdd75 20%,
+      #ffff75 24%,
+      #ddff75 28%,
+      #baff75 32%,
+      #98ff75 36%,
+      #75ff75 40%,
+      #75ff98 44%,
+      #75ffba 48%,
+      #75ffdd 52%,
+      #75ffff 56%,
+      #75ddff 60%,
+      #75baff 64%,
+      #7598ff 68%,
+      #7575ff 72%,
+      #9875ff 76%,
+      #ba75ff 80%,
+      #dd75ff 84%,
+      #ff75ff 88%,
+      #ff75dd 92%,
+      #ff75ba 96%
+    );
+    -webkit-background-clip: text;
+  }
+  96% {
+    background: linear-gradient(
+      90deg,
+      #ff7575 0%,
+      #ff7575 4%,
+      #ff9875 8%,
+      #ffba75 12%,
+      #ffdd75 16%,
+      #ffff75 20%,
+      #ddff75 24%,
+      #baff75 28%,
+      #98ff75 32%,
+      #75ff75 36%,
+      #75ff98 40%,
+      #75ffba 44%,
+      #75ffdd 48%,
+      #75ffff 52%,
+      #75ddff 56%,
+      #75baff 60%,
+      #7598ff 64%,
+      #7575ff 68%,
+      #9875ff 72%,
+      #ba75ff 76%,
+      #dd75ff 80%,
+      #ff75ff 84%,
+      #ff75dd 88%,
+      #ff75ba 92%,
+      #ff7598 96%
+    );
+    -webkit-background-clip: text;
+  }
+  to {
+    background: linear-gradient(
+      90deg,
+      #ff7575 0%,
+      #ff9875 4%,
+      #ffba75 8%,
+      #ffdd75 12%,
+      #ffff75 16%,
+      #ddff75 20%,
+      #baff75 24%,
+      #98ff75 28%,
+      #75ff75 32%,
+      #75ff98 36%,
+      #75ffba 40%,
+      #75ffdd 44%,
+      #75ffff 48%,
+      #75ddff 52%,
+      #75baff 56%,
+      #7598ff 60%,
+      #7575ff 64%,
+      #9875ff 68%,
+      #ba75ff 72%,
+      #dd75ff 76%,
+      #ff75ff 80%,
+      #ff75dd 84%,
+      #ff75ba 88%,
+      #ff7598 92%,
+      #ff7575 96%
+    );
+    -webkit-background-clip: text;
+  }
+}
+
+@keyframes colourRotateForwards {
+  from {
+    background: linear-gradient(
+      90deg,
+      #ff7575 0%,
+      #ff9875 4%,
+      #ffba75 8%,
+      #ffdd75 12%,
+      #ffff75 16%,
+      #ddff75 20%,
+      #baff75 24%,
+      #98ff75 28%,
+      #75ff75 32%,
+      #75ff98 36%,
+      #75ffba 40%,
+      #75ffdd 44%,
+      #75ffff 48%,
+      #75ddff 52%,
+      #75baff 56%,
+      #7598ff 60%,
+      #7575ff 64%,
+      #9875ff 68%,
+      #ba75ff 72%,
+      #dd75ff 76%,
+      #ff75ff 80%,
+      #ff75dd 84%,
+      #ff75ba 88%,
+      #ff7598 92%,
+      #ff7575 96%
+    );
+    -webkit-background-clip: text;
+  }
+  4% {
+    background: linear-gradient(
+      90deg,
+      #ff7575 0%,
+      #ff7575 4%,
+      #ff9875 8%,
+      #ffba75 12%,
+      #ffdd75 16%,
+      #ffff75 20%,
+      #ddff75 24%,
+      #baff75 28%,
+      #98ff75 32%,
+      #75ff75 36%,
+      #75ff98 40%,
+      #75ffba 44%,
+      #75ffdd 48%,
+      #75ffff 52%,
+      #75ddff 56%,
+      #75baff 60%,
+      #7598ff 64%,
+      #7575ff 68%,
+      #9875ff 72%,
+      #ba75ff 76%,
+      #dd75ff 80%,
+      #ff75ff 84%,
+      #ff75dd 88%,
+      #ff75ba 92%,
+      #ff7598 96%
+    );
+    -webkit-background-clip: text;
+  }
+  8% {
+    background: linear-gradient(
+      90deg,
+      #ff7598 0%,
+      #ff7575 4%,
+      #ff7575 8%,
+      #ff9875 12%,
+      #ffba75 16%,
+      #ffdd75 20%,
+      #ffff75 24%,
+      #ddff75 28%,
+      #baff75 32%,
+      #98ff75 36%,
+      #75ff75 40%,
+      #75ff98 44%,
+      #75ffba 48%,
+      #75ffdd 52%,
+      #75ffff 56%,
+      #75ddff 60%,
+      #75baff 64%,
+      #7598ff 68%,
+      #7575ff 72%,
+      #9875ff 76%,
+      #ba75ff 80%,
+      #dd75ff 84%,
+      #ff75ff 88%,
+      #ff75dd 92%,
+      #ff75ba 96%
+    );
+    -webkit-background-clip: text;
+  }
+  12% {
+    background: linear-gradient(
+      90deg,
+      #ff75ba 0%,
+      #ff7598 4%,
+      #ff7575 8%,
+      #ff7575 12%,
+      #ff9875 16%,
+      #ffba75 20%,
+      #ffdd75 24%,
+      #ffff75 28%,
+      #ddff75 32%,
+      #baff75 36%,
+      #98ff75 40%,
+      #75ff75 44%,
+      #75ff98 48%,
+      #75ffba 52%,
+      #75ffdd 56%,
+      #75ffff 60%,
+      #75ddff 64%,
+      #75baff 68%,
+      #7598ff 72%,
+      #7575ff 76%,
+      #9875ff 80%,
+      #ba75ff 84%,
+      #dd75ff 88%,
+      #ff75ff 92%,
+      #ff75dd 96%
+    );
+    -webkit-background-clip: text;
+  }
+  16% {
+    background: linear-gradient(
+      90deg,
+      #ff75dd 0%,
+      #ff75ba 4%,
+      #ff7598 8%,
+      #ff7575 12%,
+      #ff7575 16%,
+      #ff9875 20%,
+      #ffba75 24%,
+      #ffdd75 28%,
+      #ffff75 32%,
+      #ddff75 36%,
+      #baff75 40%,
+      #98ff75 44%,
+      #75ff75 48%,
+      #75ff98 52%,
+      #75ffba 56%,
+      #75ffdd 60%,
+      #75ffff 64%,
+      #75ddff 68%,
+      #75baff 72%,
+      #7598ff 76%,
+      #7575ff 80%,
+      #9875ff 84%,
+      #ba75ff 88%,
+      #dd75ff 92%,
+      #ff75ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  20% {
+    background: linear-gradient(
+      90deg,
+      #ff75ff 0%,
+      #ff75dd 4%,
+      #ff75ba 8%,
+      #ff7598 12%,
+      #ff7575 16%,
+      #ff7575 20%,
+      #ff9875 24%,
+      #ffba75 28%,
+      #ffdd75 32%,
+      #ffff75 36%,
+      #ddff75 40%,
+      #baff75 44%,
+      #98ff75 48%,
+      #75ff75 52%,
+      #75ff98 56%,
+      #75ffba 60%,
+      #75ffdd 64%,
+      #75ffff 68%,
+      #75ddff 72%,
+      #75baff 76%,
+      #7598ff 80%,
+      #7575ff 84%,
+      #9875ff 88%,
+      #ba75ff 92%,
+      #dd75ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  24% {
+    background: linear-gradient(
+      90deg,
+      #dd75ff 0%,
+      #ff75ff 4%,
+      #ff75dd 8%,
+      #ff75ba 12%,
+      #ff7598 16%,
+      #ff7575 20%,
+      #ff7575 24%,
+      #ff9875 28%,
+      #ffba75 32%,
+      #ffdd75 36%,
+      #ffff75 40%,
+      #ddff75 44%,
+      #baff75 48%,
+      #98ff75 52%,
+      #75ff75 56%,
+      #75ff98 60%,
+      #75ffba 64%,
+      #75ffdd 68%,
+      #75ffff 72%,
+      #75ddff 76%,
+      #75baff 80%,
+      #7598ff 84%,
+      #7575ff 88%,
+      #9875ff 92%,
+      #ba75ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  28% {
+    background: linear-gradient(
+      90deg,
+      #ba75ff 0%,
+      #dd75ff 4%,
+      #ff75ff 8%,
+      #ff75dd 12%,
+      #ff75ba 16%,
+      #ff7598 20%,
+      #ff7575 24%,
+      #ff7575 28%,
+      #ff9875 32%,
+      #ffba75 36%,
+      #ffdd75 40%,
+      #ffff75 44%,
+      #ddff75 48%,
+      #baff75 52%,
+      #98ff75 56%,
+      #75ff75 60%,
+      #75ff98 64%,
+      #75ffba 68%,
+      #75ffdd 72%,
+      #75ffff 76%,
+      #75ddff 80%,
+      #75baff 84%,
+      #7598ff 88%,
+      #7575ff 92%,
+      #9875ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  32% {
+    background: linear-gradient(
+      90deg,
+      #9875ff 0%,
+      #ba75ff 4%,
+      #dd75ff 8%,
+      #ff75ff 12%,
+      #ff75dd 16%,
+      #ff75ba 20%,
+      #ff7598 24%,
+      #ff7575 28%,
+      #ff7575 32%,
+      #ff9875 36%,
+      #ffba75 40%,
+      #ffdd75 44%,
+      #ffff75 48%,
+      #ddff75 52%,
+      #baff75 56%,
+      #98ff75 60%,
+      #75ff75 64%,
+      #75ff98 68%,
+      #75ffba 72%,
+      #75ffdd 76%,
+      #75ffff 80%,
+      #75ddff 84%,
+      #75baff 88%,
+      #7598ff 92%,
+      #7575ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  36% {
+    background: linear-gradient(
+      90deg,
+      #7575ff 0%,
+      #9875ff 4%,
+      #ba75ff 8%,
+      #dd75ff 12%,
+      #ff75ff 16%,
+      #ff75dd 20%,
+      #ff75ba 24%,
+      #ff7598 28%,
+      #ff7575 32%,
+      #ff7575 36%,
+      #ff9875 40%,
+      #ffba75 44%,
+      #ffdd75 48%,
+      #ffff75 52%,
+      #ddff75 56%,
+      #baff75 60%,
+      #98ff75 64%,
+      #75ff75 68%,
+      #75ff98 72%,
+      #75ffba 76%,
+      #75ffdd 80%,
+      #75ffff 84%,
+      #75ddff 88%,
+      #75baff 92%,
+      #7598ff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  40% {
+    background: linear-gradient(
+      90deg,
+      #7598ff 0%,
+      #7575ff 4%,
+      #9875ff 8%,
+      #ba75ff 12%,
+      #dd75ff 16%,
+      #ff75ff 20%,
+      #ff75dd 24%,
+      #ff75ba 28%,
+      #ff7598 32%,
+      #ff7575 36%,
+      #ff7575 40%,
+      #ff9875 44%,
+      #ffba75 48%,
+      #ffdd75 52%,
+      #ffff75 56%,
+      #ddff75 60%,
+      #baff75 64%,
+      #98ff75 68%,
+      #75ff75 72%,
+      #75ff98 76%,
+      #75ffba 80%,
+      #75ffdd 84%,
+      #75ffff 88%,
+      #75ddff 92%,
+      #75baff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  44% {
+    background: linear-gradient(
+      90deg,
+      #75baff 0%,
+      #7598ff 4%,
+      #7575ff 8%,
+      #9875ff 12%,
+      #ba75ff 16%,
+      #dd75ff 20%,
+      #ff75ff 24%,
+      #ff75dd 28%,
+      #ff75ba 32%,
+      #ff7598 36%,
+      #ff7575 40%,
+      #ff7575 44%,
+      #ff9875 48%,
+      #ffba75 52%,
+      #ffdd75 56%,
+      #ffff75 60%,
+      #ddff75 64%,
+      #baff75 68%,
+      #98ff75 72%,
+      #75ff75 76%,
+      #75ff98 80%,
+      #75ffba 84%,
+      #75ffdd 88%,
+      #75ffff 92%,
+      #75ddff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  48% {
+    background: linear-gradient(
+      90deg,
+      #75ddff 0%,
+      #75baff 4%,
+      #7598ff 8%,
+      #7575ff 12%,
+      #9875ff 16%,
+      #ba75ff 20%,
+      #dd75ff 24%,
+      #ff75ff 28%,
+      #ff75dd 32%,
+      #ff75ba 36%,
+      #ff7598 40%,
+      #ff7575 44%,
+      #ff7575 48%,
+      #ff9875 52%,
+      #ffba75 56%,
+      #ffdd75 60%,
+      #ffff75 64%,
+      #ddff75 68%,
+      #baff75 72%,
+      #98ff75 76%,
+      #75ff75 80%,
+      #75ff98 84%,
+      #75ffba 88%,
+      #75ffdd 92%,
+      #75ffff 96%
+    );
+    -webkit-background-clip: text;
+  }
+  52% {
+    background: linear-gradient(
+      90deg,
+      #75ffff 0%,
+      #75ddff 4%,
+      #75baff 8%,
+      #7598ff 12%,
+      #7575ff 16%,
+      #9875ff 20%,
+      #ba75ff 24%,
+      #dd75ff 28%,
+      #ff75ff 32%,
+      #ff75dd 36%,
+      #ff75ba 40%,
+      #ff7598 44%,
+      #ff7575 48%,
+      #ff7575 52%,
+      #ff9875 56%,
+      #ffba75 60%,
+      #ffdd75 64%,
+      #ffff75 68%,
+      #ddff75 72%,
+      #baff75 76%,
+      #98ff75 80%,
+      #75ff75 84%,
+      #75ff98 88%,
+      #75ffba 92%,
+      #75ffdd 96%
+    );
+    -webkit-background-clip: text;
+  }
+  56% {
+    background: linear-gradient(
+      90deg,
+      #75ffdd 0%,
+      #75ffff 4%,
+      #75ddff 8%,
+      #75baff 12%,
+      #7598ff 16%,
+      #7575ff 20%,
+      #9875ff 24%,
+      #ba75ff 28%,
+      #dd75ff 32%,
+      #ff75ff 36%,
+      #ff75dd 40%,
+      #ff75ba 44%,
+      #ff7598 48%,
+      #ff7575 52%,
+      #ff7575 56%,
+      #ff9875 60%,
+      #ffba75 64%,
+      #ffdd75 68%,
+      #ffff75 72%,
+      #ddff75 76%,
+      #baff75 80%,
+      #98ff75 84%,
+      #75ff75 88%,
+      #75ff98 92%,
+      #75ffba 96%
+    );
+    -webkit-background-clip: text;
+  }
+  60% {
+    background: linear-gradient(
+      90deg,
+      #75ffba 0%,
+      #75ffdd 4%,
+      #75ffff 8%,
+      #75ddff 12%,
+      #75baff 16%,
+      #7598ff 20%,
+      #7575ff 24%,
+      #9875ff 28%,
+      #ba75ff 32%,
+      #dd75ff 36%,
+      #ff75ff 40%,
+      #ff75dd 44%,
+      #ff75ba 48%,
+      #ff7598 52%,
+      #ff7575 56%,
+      #ff7575 60%,
+      #ff9875 64%,
+      #ffba75 68%,
+      #ffdd75 72%,
+      #ffff75 76%,
+      #ddff75 80%,
+      #baff75 84%,
+      #98ff75 88%,
+      #75ff75 92%,
+      #75ff98 96%
+    );
+    -webkit-background-clip: text;
+  }
+  64% {
+    background: linear-gradient(
+      90deg,
+      #75ff98 0%,
+      #75ffba 4%,
+      #75ffdd 8%,
+      #75ffff 12%,
+      #75ddff 16%,
+      #75baff 20%,
+      #7598ff 24%,
+      #7575ff 28%,
+      #9875ff 32%,
+      #ba75ff 36%,
+      #dd75ff 40%,
+      #ff75ff 44%,
+      #ff75dd 48%,
+      #ff75ba 52%,
+      #ff7598 56%,
+      #ff7575 60%,
+      #ff7575 64%,
+      #ff9875 68%,
+      #ffba75 72%,
+      #ffdd75 76%,
+      #ffff75 80%,
+      #ddff75 84%,
+      #baff75 88%,
+      #98ff75 92%,
+      #75ff75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  68% {
+    background: linear-gradient(
+      90deg,
+      #75ff75 0%,
+      #75ff98 4%,
+      #75ffba 8%,
+      #75ffdd 12%,
+      #75ffff 16%,
+      #75ddff 20%,
+      #75baff 24%,
+      #7598ff 28%,
+      #7575ff 32%,
+      #9875ff 36%,
+      #ba75ff 40%,
+      #dd75ff 44%,
+      #ff75ff 48%,
+      #ff75dd 52%,
+      #ff75ba 56%,
+      #ff7598 60%,
+      #ff7575 64%,
+      #ff7575 68%,
+      #ff9875 72%,
+      #ffba75 76%,
+      #ffdd75 80%,
+      #ffff75 84%,
+      #ddff75 88%,
+      #baff75 92%,
+      #98ff75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  72% {
+    background: linear-gradient(
+      90deg,
+      #98ff75 0%,
+      #75ff75 4%,
+      #75ff98 8%,
+      #75ffba 12%,
+      #75ffdd 16%,
+      #75ffff 20%,
+      #75ddff 24%,
+      #75baff 28%,
+      #7598ff 32%,
+      #7575ff 36%,
+      #9875ff 40%,
+      #ba75ff 44%,
+      #dd75ff 48%,
+      #ff75ff 52%,
+      #ff75dd 56%,
+      #ff75ba 60%,
+      #ff7598 64%,
+      #ff7575 68%,
+      #ff7575 72%,
+      #ff9875 76%,
+      #ffba75 80%,
+      #ffdd75 84%,
+      #ffff75 88%,
+      #ddff75 92%,
+      #baff75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  76% {
+    background: linear-gradient(
+      90deg,
+      #baff75 0%,
+      #98ff75 4%,
+      #75ff75 8%,
+      #75ff98 12%,
+      #75ffba 16%,
+      #75ffdd 20%,
+      #75ffff 24%,
+      #75ddff 28%,
+      #75baff 32%,
+      #7598ff 36%,
+      #7575ff 40%,
+      #9875ff 44%,
+      #ba75ff 48%,
+      #dd75ff 52%,
+      #ff75ff 56%,
+      #ff75dd 60%,
+      #ff75ba 64%,
+      #ff7598 68%,
+      #ff7575 72%,
+      #ff7575 76%,
+      #ff9875 80%,
+      #ffba75 84%,
+      #ffdd75 88%,
+      #ffff75 92%,
+      #ddff75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  80% {
+    background: linear-gradient(
+      90deg,
+      #ddff75 0%,
+      #baff75 4%,
+      #98ff75 8%,
+      #75ff75 12%,
+      #75ff98 16%,
+      #75ffba 20%,
+      #75ffdd 24%,
+      #75ffff 28%,
+      #75ddff 32%,
+      #75baff 36%,
+      #7598ff 40%,
+      #7575ff 44%,
+      #9875ff 48%,
+      #ba75ff 52%,
+      #dd75ff 56%,
+      #ff75ff 60%,
+      #ff75dd 64%,
+      #ff75ba 68%,
+      #ff7598 72%,
+      #ff7575 76%,
+      #ff7575 80%,
+      #ff9875 84%,
+      #ffba75 88%,
+      #ffdd75 92%,
+      #ffff75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  84% {
+    background: linear-gradient(
+      90deg,
+      #ffff75 0%,
+      #ddff75 4%,
+      #baff75 8%,
+      #98ff75 12%,
+      #75ff75 16%,
+      #75ff98 20%,
+      #75ffba 24%,
+      #75ffdd 28%,
+      #75ffff 32%,
+      #75ddff 36%,
+      #75baff 40%,
+      #7598ff 44%,
+      #7575ff 48%,
+      #9875ff 52%,
+      #ba75ff 56%,
+      #dd75ff 60%,
+      #ff75ff 64%,
+      #ff75dd 68%,
+      #ff75ba 72%,
+      #ff7598 76%,
+      #ff7575 80%,
+      #ff7575 84%,
+      #ff9875 88%,
+      #ffba75 92%,
+      #ffdd75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  88% {
+    background: linear-gradient(
+      90deg,
+      #ffdd75 0%,
+      #ffff75 4%,
+      #ddff75 8%,
+      #baff75 12%,
+      #98ff75 16%,
+      #75ff75 20%,
+      #75ff98 24%,
+      #75ffba 28%,
+      #75ffdd 32%,
+      #75ffff 36%,
+      #75ddff 40%,
+      #75baff 44%,
+      #7598ff 48%,
+      #7575ff 52%,
+      #9875ff 56%,
+      #ba75ff 60%,
+      #dd75ff 64%,
+      #ff75ff 68%,
+      #ff75dd 72%,
+      #ff75ba 76%,
+      #ff7598 80%,
+      #ff7575 84%,
+      #ff7575 88%,
+      #ff9875 92%,
+      #ffba75 96%
+    );
+    -webkit-background-clip: text;
+  }
+  92% {
+    background: linear-gradient(
+      90deg,
+      #ffba75 0%,
+      #ffdd75 4%,
+      #ffff75 8%,
+      #ddff75 12%,
+      #baff75 16%,
+      #98ff75 20%,
+      #75ff75 24%,
+      #75ff98 28%,
+      #75ffba 32%,
+      #75ffdd 36%,
+      #75ffff 40%,
+      #75ddff 44%,
+      #75baff 48%,
+      #7598ff 52%,
+      #7575ff 56%,
+      #9875ff 60%,
+      #ba75ff 64%,
+      #dd75ff 68%,
+      #ff75ff 72%,
+      #ff75dd 76%,
+      #ff75ba 80%,
+      #ff7598 84%,
+      #ff7575 88%,
+      #ff7575 92%,
+      #ff9875 96%
+    );
+    -webkit-background-clip: text;
+  }
+  96% {
+    background: linear-gradient(
+      90deg,
+      #ff9875 0%,
+      #ffba75 4%,
+      #ffdd75 8%,
+      #ffff75 12%,
+      #ddff75 16%,
+      #baff75 20%,
+      #98ff75 24%,
+      #75ff75 28%,
+      #75ff98 32%,
+      #75ffba 36%,
+      #75ffdd 40%,
+      #75ffff 44%,
+      #75ddff 48%,
+      #75baff 52%,
+      #7598ff 56%,
+      #7575ff 60%,
+      #9875ff 64%,
+      #ba75ff 68%,
+      #dd75ff 72%,
+      #ff75ff 76%,
+      #ff75dd 80%,
+      #ff75ba 84%,
+      #ff7598 88%,
+      #ff7575 92%,
+      #ff7575 96%
+    );
+    -webkit-background-clip: text;
+  }
+  to {
+    background: linear-gradient(
+      90deg,
+      #ff7575 0%,
+      #ff9875 4%,
+      #ffba75 8%,
+      #ffdd75 12%,
+      #ffff75 16%,
+      #ddff75 20%,
+      #baff75 24%,
+      #98ff75 28%,
+      #75ff75 32%,
+      #75ff98 36%,
+      #75ffba 40%,
+      #75ffdd 44%,
+      #75ffff 48%,
+      #75ddff 52%,
+      #75baff 56%,
+      #7598ff 60%,
+      #7575ff 64%,
+      #9875ff 68%,
+      #ba75ff 72%,
+      #dd75ff 76%,
+      #ff75ff 80%,
+      #ff75dd 84%,
+      #ff75ba 88%,
+      #ff7598 92%,
+      #ff7575 96%
+    );
+    -webkit-background-clip: text;
+  }
+}
+
+@keyframes flowTopToBottom {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(110%);
+  }
+}
+
+@keyframes flowBottomToTop {
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    clip: rect(0, 0, 100px, 0);
+  }
+  4% {
+    clip: rect(0, 66.66667px, 100px, 0);
+  }
+  15% {
+    clip: rect(0, 133.33333px, 100px, 0);
+  }
+  20% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 1;
+  }
+
+  80% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
