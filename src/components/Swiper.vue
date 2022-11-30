@@ -85,6 +85,7 @@ const modules = [Autoplay, EffectCards];
 .swiper {
   width: 60vw;
   height: 35vw;
+  margin: auto;
 }
 
 .swiper-slide {
