@@ -2,7 +2,8 @@
   <div class="about-container">
     <div class="desc">
       <div class="image-container">
-        <img src="../assets/pp.jpg" alt="profile-photo" />
+        <img src="../assets/pp.jpg" alt="profile-photo" class="profile-img" />
+        <img src="../assets/eiffel.jpg" alt="eiffel-photo" class="hover-img" />
       </div>
       <div class="text">
         <div class="desc-text">
@@ -57,35 +58,47 @@ const scrollDown = () => {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+
   text-align: center;
   .desc {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     .image-container {
-      width: 40%;
+      width: 25%;
+      position: relative;
+
       img {
         border-radius: 10px;
         width: 100%;
         max-width: 500px;
-
         object-fit: cover;
         transition: 0.2s all ease-in-out;
         filter: grayscale(0%) brightness(100%) sepia(0%) hue-rotate(0)
           saturate(100%);
+      }
 
-        &:hover {
-          filter: grayscale(100%) brightness(80%) sepia(300%) hue-rotate(50deg)
-            saturate(500%);
-        }
+      & .hover-img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        right: 0;
+        bottom: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: 0.2s opacity ease-in-out;
+      }
+
+      &:hover .hover-img {
+        opacity: 1;
       }
     }
 
     .text {
       // margin-left: 100px;
-      width: 40%;
+      width: 50%;
       letter-spacing: 2px;
       display: flex;
       flex-direction: column;
