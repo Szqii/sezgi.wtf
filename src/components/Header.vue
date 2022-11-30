@@ -5,9 +5,9 @@
       <VueWriter
         :array="titleArray"
         :typeSpeed="70"
-        :iterations="1"
+        :iterations="infinite"
         :eraseSpeed="50"
-        :delay="500"
+        :delay="800"
       />
     </div>
     <i class="fa-solid fa-angles-down bounce" @click="scrollDown"></i>
