@@ -73,17 +73,13 @@
           alt="Figma"
       /></a>
     </div>
+    <h2 class="projects-section-title">Projects & Skillset</h2>
     <Swiper />
   </div>
 </template>
 
 <script setup>
 import Swiper from "./Swiper.vue";
-import { onMounted } from "vue";
-
-onMounted(() => {
-  console.log("Projects rendered");
-});
 </script>
 
 <style lang="scss" scoped>
@@ -93,8 +89,12 @@ onMounted(() => {
   height: 100vh;
   overflow-y: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+
+  .projects-section-title {
+    margin-top: 30px;
+  }
 }
 
 .skills {
