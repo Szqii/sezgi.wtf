@@ -49,11 +49,9 @@ const saveTheme = () => {
 .theme-switcher-container {
   display: flex;
   align-items: center;
-
   position: absolute;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 100px;
 }
 .theme-color {
   width: 20px;
@@ -65,5 +63,11 @@ const saveTheme = () => {
 
 .active {
   border: 2px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .theme-switcher-container {
+    right: 20px;
+  }
 }
 </style>

@@ -33,7 +33,7 @@ onMounted(() => {
 
 body {
   width: 100vw;
-
+  max-width: 100vw;
   overflow-x: hidden;
   background-color: #000;
   color: #fff;

@@ -27,4 +27,10 @@ span {
     animation: colourRotateForwards 2s linear infinite;
   }
 }
+
+@media (max-width: 768px) {
+  span{
+    left : 20px;
+  }
+}
 </style>

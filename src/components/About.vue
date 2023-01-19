@@ -11,13 +11,15 @@
             Hey! <br />
             I am Sezgi Altan,
             <span style="color: var(--primary-text-color)">
-              Frontend & UI Developer</span
-            >
+              Frontend & UI Developer</span>
           </span>
           <span>
             I am 4th grade <b>Computer Engineering </b> Student at
             <b>Pamukkale University</b> and Core-team member at
             <b>Pausiber, Pamukkale University Cyber-Security Community.</b>
+            <br />
+            <br />
+            Currently, I am working as a Frontend Developer at <a href="https://simpliers.com/en" style="color: var(--primary-text-color)"><b>Simpliers</b></a>
             <br />
             <br />
             Working on building web applications as weekend projects. <br />
@@ -60,6 +62,7 @@ const scrollDown = () => {
   justify-content: center;
 
   text-align: center;
+
   .desc {
     display: flex;
     align-items: center;
@@ -75,8 +78,7 @@ const scrollDown = () => {
         max-width: 500px;
         object-fit: cover;
         transition: 0.2s all ease-in-out;
-        filter: grayscale(0%) brightness(100%) sepia(0%) hue-rotate(0)
-          saturate(100%);
+        filter: grayscale(0%) brightness(100%) sepia(0%) hue-rotate(0) saturate(100%);
       }
 
       & .hover-img {
@@ -111,6 +113,7 @@ const scrollDown = () => {
         font-weight: bolder;
         margin-bottom: 20px;
       }
+
       span {
         font-size: 20px;
         line-height: 1.5;
@@ -122,8 +125,10 @@ const scrollDown = () => {
       }
     }
   }
+
   .icon-container {
     margin-top: 60px;
+
     i.bounce {
       font-size: 36px;
       animation: bounce 1s infinite;
@@ -149,12 +154,50 @@ const scrollDown = () => {
     i {
       transition: 0.2s all ease-in-out;
     }
+
     &:hover {
       i {
         color: var(--primary-text-color);
         transform: translateX(5px);
       }
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    .desc {
+      justify-content: center;
+      .image-container {
+        width: 35%;
+      }
+
+      .text {
+        .title {
+          font-size: 26px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    display: none;
+  }
+
+  .text {
+    width: 75% !important;
+  }
+
+  .icon-container {
+    margin-top: 20px !important;
   }
 }
 </style>

@@ -65,4 +65,13 @@ header {
     }
   }
 }
+
+@media (max-width: 500px) {
+  header {
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+  
 </style>
