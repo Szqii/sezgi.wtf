@@ -6,7 +6,7 @@
       <div class="contact-link linkedin">
         <a
           href="
-              https://www.linkedin.com/in/sezgi-altan/"
+              https://www.linkedin.com/in/sezgialtan/"
           target="_blank"
         >
           <i class="fab fa-linkedin"></i>
